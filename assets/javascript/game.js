@@ -1,38 +1,78 @@
 $(document).ready(function(){
 
+    let gameTarget = Math.floor(Math.random()*70) + 50;
+    
+    $("#game-target").text(gameTarget);
+    let turtleVal1 = Math.floor(Math.random()*3) + 9;   
+    let turtleVal2 = Math.floor(Math.random()*3) + 6;   
+    let turtleVal3 = Math.floor(Math.random()*2) + 4;   
+    let turtleVal4 = Math.floor(Math.random()*3) + 1;   
+    
 
-
-    let image1 = " ";
-    let image2 = " ";
-    let image3 = " ";
-    let image4 = " ";
-
-    $("#random-button").on("click", function(){
-        let random = "";
-        for (let i=0; i<2; i++){
-        let randomNum = Math.floor(Math.random()*2) +5;
-            random = random + randomNum;
+    let turtleSum = 0;
+    
+    $("#turtle-val1").on("click", function() 
+    {
+        // on each click add the turtleVal value to turtleSum 
+        //display turtleSum.
+        let resultDiv = $("#result");
+        turtleSum = turtleVal1 + turtleSum;
+        $(".score").text(turtleSum);
+        if (turtleSum === gameTarget){
+            resultDiv.text("you got it");
         }
-        $("#random-button").text(random);
-    })
+        else if(turtleSum>gameTarget){
+            resultDiv.text("nope! you lost")
+        }
+    });
+    
+    $(".score").text(turtleSum);
+    
+    $("#turtle-val2").on("click", function() 
+    {
+        // on each click add the turtleVal value to turtleSum 
+        //display turtleSum.
+        let resultDiv = $("#result");
+         turtleSum = turtleVal2 + turtleSum
+         $(".score").text(turtleSum);
+         if (turtleSum === gameTarget){
+            resultDiv.text("you got it")
+        }
+        else if(turtleSum>gameTarget){
+            resultDiv.text("nope! you lost")
+        }
+    });
+    
+    $("#turtle-val3").on("click", function() 
+    {
+        //$("#turtle-val1").html("<img src='assets/images/donatello.jpg'/>");
+        // on each click add the turtleVal value to turtleSum 
+        //display turtleSum.
+        let resultDiv = $("#result");
+        turtleSum = turtleVal3 + turtleSum
+        $(".score").text(turtleSum);
+        if (turtleSum === gameTarget){
+            resultDiv.text("you got it")
+        }
+        else if(turtleSum>gameTarget){
+            resultDiv.text("nope! you lost")
+        }
+    });
+    
+    $("#turtle-val4").on("click", function() 
+    {
+        // on each click add the turtleVal value to turtleSum 
+        //display turtleSum.
+        let resultDiv = $("#result");
+        turtleSum = turtleVal4 + turtleSum
+        $(".score").text(turtleSum);
+        if (turtleSum === gameTarget){
+            resultDiv.text("you got it")
+        }
+        else if(turtleSum>gameTarget){
+            resultDiv.text("nope! you lost")
 
-
-   $("#image1").on("click", function() {
-        image1++
-    alert(image1);
-   })
-    $("#image2").on("click", function() {
-            image2++
-        alert(image2);
-    })
-    $("#image3").on("click", function() {
-        image3++
-    alert(image3);
-    })
-    $("#image4").on("click", function() {
-        image4++
-    alert(image4);
-    })
-
-
-})
+        }
+    });
+    
+});

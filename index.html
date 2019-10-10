@@ -8,21 +8,36 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>Crystals Collector</title>
+    <title>Ninja Turtles collector</title>
+
 </head>
 <body>
     <div class = "main">
-        <h1>Cristal Collector</h1>
-        <div class = "Instructions"></div>
-        <button id="random-button" class="btn btn-primary btn-lg"><h1><span class="fa fa-question"></span></h1></button>
-        <div id = "image1">image1</div>
-        <div id = "image2">image2</div>
-        <div id = "image3">image3</div>
-        <div id = "image4">image4</div>
+
+        <h1>Ninja Turtles</h1>
+
+        <div class = "instructions">You will be given a random number at the start of the game.<br> each Ninja turtle has a set value that will be hidden. By clicking on them you will add a specifc amount of points to "your total score".<br> You will win the game by matching your score to the random number. You lose the game if your score <br> goes above the random number.<br> Each time when the game starts, all values will be changed.</div>
+        <div id="game-target"></div>
+        <div id ="result"></div>
+
+        <div id = "turtle-val1">
+            <img src="assets/images/donatello.jpg"width="170" height="200"; alt="Donatello"></a>
+        </div>
+        <div id = "turtle-val2">
+            <img src="assets/images/leonardo.jpg"width="170" height="200"; alt="Donatello"></a>            
+        </div>
+        <div id = "turtle-val3">
+            <img src="assets/images/michelangelo.jpg"width="170" height="200"; alt="Donatello"></a>                        
+        </div>
+        <div id = "turtle-val4">
+            <img src="assets/images/raphael.jpg"width="170" height="200"; alt="Donatello"></a>                        
+        </div>
         <div class = "yourScore">Your score is:</div>
         <div class = "score"></div>
 
-    </div>    
+    </div>  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script src="assets/javascript/game.js">
    
     </script>
