@@ -104,5 +104,13 @@ img:hover{
     .yourScore{
     margin: 140px 0 0 30px;
     }
+    body{
+        background-size: auto;
+    }
 
+}
+@media screen and (max-width:640px){
+    body{
+        background-size: auto;
+    }
 }
