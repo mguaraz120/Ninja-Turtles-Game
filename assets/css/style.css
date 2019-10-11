@@ -14,26 +14,35 @@ body{
 }
 .instructions{
     text-align: left;
-    color: #fa8072;
+    color: #32CD32;
     font-size: 14px;
     font-family:'Shadows Into Light', cursive;
     font-weight: bolder;
     margin: 10px 30px;
     width: 50%;
+    
 }
 #game-target{
     text-align: right;
+    background-color: #c0c0c0;
     font-size: 25px;
     color: #006400;
-    font-family:'Mansalva', cursive;
-    background-color: #f4f4f4;
+    font-family:'Ma32CD32nsalva', cursive;
     margin: 10px 30px;
     width: 50%;
 }
 #result{
+height: 80px;
 float: right;
+font-family:'Mansalva', cursive;
+font-weight: bolder;
+font-size: 30px;
+color: #006400;
+margin-right: 20px;
+margin-top: -140px;
+padding-left: 20px;
 width: 20%;
-background-color: #fa8072;
+/* background-color: #c0c0c0; */
 }
 #turtle-val1{
     float: left;
@@ -76,7 +85,7 @@ img:hover{
     color: #b22222;
     font-weight: bolder;    
     font-family:'Shadows Into Light', cursive;
-    background-color: #f4f4f4;
+    background-color: #c0c0c0;    
     margin: 200px 0 0 30px;
     width: 50%;
 }
@@ -86,7 +95,7 @@ img:hover{
     color: #006400;
     font-family:'Shadows Into Light', cursive;
     font-weight: bolder;
-    background-color: #f4f4f4;
+    background-color: #c0c0c0;
     margin: 10px 30px;
     width: 50%;
 }

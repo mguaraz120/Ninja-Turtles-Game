@@ -1,105 +1,115 @@
 $(document).ready(function(){
+    let winCounter = 0;
+    let lossCounter = 0;
     
     let gameTarget = Math.floor(Math.random()*70) + 50;
-    
     $("#game-target").text(gameTarget);
+
     let turtleVal1 = Math.floor(Math.random()*3) + 9;   
     let turtleVal2 = Math.floor(Math.random()*3) + 6;   
     let turtleVal3 = Math.floor(Math.random()*2) + 4;   
     let turtleVal4 = Math.floor(Math.random()*3) + 1;   
     
     
-    let turtleSum = 0;
-    var lockGame = false;
+
+    $("#winCounter").html(winCounter);
+    $("#lossCounter").html(lossCounter);
+    
+    let counter = 0;
+    $("#score").text(counter);
+    
+    function restartGame() {
+          
+    gameTarget = Math.floor(Math.random() * 70) + 50;
+    $("#game-target").text(gameTarget);
+    turtleVal1 = Math.floor(Math.random() * 3) + 1;
+    turtleVal2 = Math.floor(Math.random() * 3) + 6;
+    turtleVal3 = Math.floor(Math.random() * 2) + 4;
+    turtleVal4 = Math.floor(Math.random() * 3) + 9;
+    counter = 0;
+    $("#score").text(counter);
+    
+    }
+    
+    function win() {
+    
+        alert("You win!");
+        winCounter ++;
+        $("#winCounter").text(winCounter);
+        restartGame();
+    }
+    
+    function lose() {
+    
+        alert("You lose!");
+        lossCounter ++;
+        $("#lossCounter").text(lossCounter);
+        restartGame();
+    }
+
+
 
     $("#turtle-val1").on("click", function() 
     {
-        // on each click add the turtleVal value to turtleSum 
-        //display turtleSum.
-        if (lockGame !== true) 
-        {
-            let resultDiv = $("#result");
-            turtleSum = turtleVal1 + turtleSum;
-            $(".score").text(turtleSum);
+        counter = counter + turtleVal1;
 
-            if (turtleSum === gameTarget)
-            {
-                resultDiv.text("you got it");
-                lockGame = true;
-                location.reload(true);
-            }
-            else if(turtleSum>gameTarget){
-                resultDiv.text("nope! you lost") 
-                lockGame = true;
-                location.reload(true);        
-            }
+        $(".score").text(counter);
+
+        if (counter === gameTarget)
+        {
+            win();
+        }
+        else if(counter>gameTarget){
+            lose();        
         }
     });
         
     $("#turtle-val2").on("click", function() 
     {
-        if (lockGame !== true) 
-        {
-            let resultDiv = $("#result");
-            turtleSum = turtleVal2 + turtleSum
-            $(".score").text(turtleSum);
+        counter = counter + turtleVal2;
 
-            if (turtleSum === gameTarget)
+            //turtleSum = turtleVal2 + turtleSum
+            $(".score").text(counter);
+
+            if (counter === gameTarget)
             {
-                resultDiv.text("you got it")
-                lockGame = true;
-                location.reload(true);
+                win();
             }
-            else if(turtleSum>gameTarget){
-                resultDiv.text("nope! you lost") 
-                lockGame = true;
-                location.reload(true);
+            else if(counter>gameTarget){
+                lose();
             }
-        }
     });
     
     $("#turtle-val3").on("click", function() 
     {
-        if (lockGame !== true) 
-        {
-            let resultDiv = $("#result");
-            turtleSum = turtleVal3 + turtleSum
-            $(".score").text(turtleSum);
+        counter = counter + turtleVal3;
 
-            if (turtleSum === gameTarget)
+            //turtleSum = turtleVal3 + turtleSum
+            $(".score").text(counter);
+
+            if (counter === gameTarget)
             {
-                resultDiv.text("you got it")
-                lockGame = true;
-                location.reload(true);
+                win();
             }
-            else if(turtleSum>gameTarget){
-                resultDiv.text("nope! you lost")
-                lockGame = true;
-                location.reload(true);
+            else if(counter>gameTarget){
+                lose();
             }
-        }
     });
     
     $("#turtle-val4").on("click", function() 
     {
-        if (lockGame !== true) 
-        {
-            let resultDiv = $("#result");
-            turtleSum = turtleVal4 + turtleSum
-            $(".score").text(turtleSum);
+        counter = counter + turtleVal4;
 
-            if (turtleSum === gameTarget)
+            //turtleSum = turtleVal4 + turtleSum
+            $(".score").text(counter);
+
+            if (counter === gameTarget)
             {
-                resultDiv.text("you got it")
-                lockGame = true;
-                location.reload(true);
+                win();
             }
-            else if(turtleSum>gameTarget){
-                resultDiv.text("nope! you lost")
-                lockGame = true;
-                location.reload(true);
+            else if(counter>gameTarget){
+                lose();
             }
-        }
     });
     
 });
