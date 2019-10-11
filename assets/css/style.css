@@ -9,12 +9,12 @@ body{
 .main h1{
     text-align: left;
     margin-left: 30px;
-    color: #b22222;    
+    color: #FF0000;    
     font-family:'Mansalva', cursive;
 }
 .instructions{
     text-align: left;
-    color: #32CD32;
+    color: #ADFF2F;
     font-size: 14px;
     font-family:'Shadows Into Light', cursive;
     font-weight: bolder;
@@ -26,6 +26,8 @@ body{
     text-align: right;
     background-color: #c0c0c0;
     font-size: 25px;
+    padding-right: 20px;
+    font: bolder;
     color: #006400;
     font-family:'Ma32CD32nsalva', cursive;
     margin: 10px 30px;
@@ -37,7 +39,7 @@ float: right;
 font-family:'Mansalva', cursive;
 font-weight: bolder;
 font-size: 30px;
-color: #006400;
+color: #ADFF2F;
 margin-right: 20px;
 margin-top: -140px;
 padding-left: 20px;
@@ -77,12 +79,12 @@ img{
     border-radius: 50%;
 }
 img:hover{
-    border: 5px solid #fa8072;
+    border: 5px solid #006400;
 }
 .yourScore{
     text-align: right;
     font-size: 20px;
-    color: #b22222;
+    color: #FF0000;
     font-weight: bolder;    
     font-family:'Shadows Into Light', cursive;
     margin: 200px 0 0 30px;
@@ -92,6 +94,7 @@ img:hover{
     text-align: right;
     font-size: 30px;
     color: #006400;
+    padding-right: 20px;
     font-family:'Shadows Into Light', cursive;
     font-weight: bolder;
     background-color: #c0c0c0;
