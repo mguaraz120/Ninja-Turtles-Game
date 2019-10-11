@@ -1,33 +1,24 @@
 $(document).ready(function(){
     let winCounter = 0;
-    let lossCounter = 0;
-    
-    let gameTarget = Math.floor(Math.random()*70) + 50;
-    $("#game-target").text(gameTarget);
-
-    let turtleVal1 = Math.floor(Math.random()*3) + 9;   
-    let turtleVal2 = Math.floor(Math.random()*3) + 6;   
-    let turtleVal3 = Math.floor(Math.random()*2) + 4;   
-    let turtleVal4 = Math.floor(Math.random()*3) + 1;   
-    
-    
+    let lossCounter = 0; 
+    let counter = 0;
+    restartGame();
 
     $("#winCounter").html(winCounter);
     $("#lossCounter").html(lossCounter);
     
-    let counter = 0;
-    $("#score").text(counter);
+    $(".score").text(counter);
     
     function restartGame() {
           
-    gameTarget = Math.floor(Math.random() * 70) + 50;
-    $("#game-target").text(gameTarget);
-    turtleVal1 = Math.floor(Math.random() * 3) + 1;
-    turtleVal2 = Math.floor(Math.random() * 3) + 6;
-    turtleVal3 = Math.floor(Math.random() * 2) + 4;
-    turtleVal4 = Math.floor(Math.random() * 3) + 9;
-    counter = 0;
-    $("#score").text(counter);
+        gameTarget = Math.floor(Math.random() * 70) + 50;
+        $("#game-target").text(gameTarget);
+        turtleVal1 = Math.floor(Math.random() * 3) + 1;
+        turtleVal2 = Math.floor(Math.random() * 3) + 6;
+        turtleVal3 = Math.floor(Math.random() * 2) + 4;
+        turtleVal4 = Math.floor(Math.random() * 3) + 9;
+        counter = 0;
+        $(".score").text(0);
     
     }
     
