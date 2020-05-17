@@ -49,9 +49,6 @@ $(document).ready(function(){
 
     $("#turtle-val1").on("click", function() 
     {
-        //Users/mvizcaino/Documents/bootcamp/assets/audio/SE.AFS_00018.wav
-        //Users/mvizcaino/Documents/bootcamp/unit-4-game/assets/javascript/game.js
-        //Users/mvizcaino/Documents/bootcamp/unit-4-game/assets/audio     /SE.AFS_00018.wav
         counter = counter + turtleVal1;
         audio1.play();
 
