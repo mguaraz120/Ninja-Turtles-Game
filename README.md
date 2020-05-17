@@ -2,7 +2,7 @@
 
 ## Live Link
 
-- https://mguaraz120.github.io/unit-4-game/
+- https://mguaraz120.github.io/Ninja-Turtles-Game/
 
 ## Description on how to use the app
 
