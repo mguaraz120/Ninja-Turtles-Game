@@ -2,7 +2,10 @@
 
 ## Live Link
 
-- https://mguaraz120.github.io/Ninja-Turtles-Game/
+-To view this Game- https://mguaraz120.github.io/Ninja-Turtles-Game/
+
+- My Portfolio:https://mguaraz120.github.io/Portfolio/
+- My Linkedin Page:https://www.linkedin.com/in/mario-vizcaino-187ab9104/
 
 ## Description on how to use the app
 
@@ -36,3 +39,4 @@
 - HTML
 - CSS
 - Javascript
+  ![Image description](assets/images/turtles1.PNG)
